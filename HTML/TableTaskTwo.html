@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .box{
+           
+        }
+        .nav {
+             margin: auto;
+            min-height: 50px;
+            width: 750px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .left-box {
+            min-width: 20px;
+        }
+
+        table {
+            margin: auto;
+            min-height: 50px;
+            min-width: 750px;
+            border-collapse: collapse;
+            border: 1px solid #000;
+            /*text-align: center;*/
+        }
+
+        .pdf {
+            margin-left: 0px;
+        }
+
+        .add {
+            background-color: rgb(27, 27, 108);
+            border-radius: 5px solid black;
+            color: aliceblue;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <nav class="nav">
+            <div class="left-box">
+                <ul type="none">
+                    <li><b>All Employee</b></li>
+                </ul>
+            </div>
+            <div class="right-box">
+                <ul type="none">
+                    <li><img src="/Image/nav.png" alt=""></li>
+                    <li><img src="/Image/Dropdown.png" alt=""></li>
+                    <li class="add"><button><a href="">add</a></button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <table>
+            <thead>
+                <th>imgFilename<img src="/Image/UpArrow.png" alt=""><img src="/Image/DownArrow.png" alt=""></th>
+                <th>Shared To<img src="/Image/UpArrow.png" alt=""><img src="/Image/DownArrow.png" alt=""></th>
+                <th>Folder<img src="/Image/UpArrow.png" alt=""><img src="/Image/DownArrow.png" alt=""></th>
+                <th>Modified<img src="/Image/UpArrow.png" alt=""><img src="/Image/DownArrow.png" alt="">+</th>
+            </thead>
+            <tr>
+
+                <td class="pdf"><img src="/Image/PdfIcon.png" alt="">File Image</td>
+                <td>John smith</td>
+                <td>policy</td>
+                <td>18/042023</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PdfIcon.png" alt="">Document File</td>
+                <td>Jess</td>
+                <td>complaints</td>
+                <td>18/04/2025</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PdfIcon.png" alt="">Charts-sales March23</td>
+                <td>Save control</td>
+                <td>saturday</td>
+                <td>21/02/2013</td>
+            </tr>
+            <tr>
+                <td><img src="/Image/PDFIconB.png" alt="">Company HandBook</td>
+                <td>Stella Devis</td>
+                <td>Complaints</td>
+                <td>04/14/2023</td>
+            </tr>
+            <tr>
+                <td class="pdf">Document File</td>
+                <td>Chris Williams</td>
+                <td>Saturday</td>
+                <td>18/04/23</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PdfIcon.png" alt="">Document HandBook</td>
+                <td>fredlink</td>
+                <td>saturday</td>
+                <td>05/02/2023</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PdfIcon.png" alt="">Charts-sales</td>
+                <td>Claudel Jones</td>
+                <td>Saturday</td>
+                <td>04/14/2023</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PDFIconB.png" alt="">Implementation plan</td>
+                <td>Steve conrad</td>
+                <td>policy</td>
+                <td>18/04/2025</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PdfIcon.png" alt="">Complaints file</td>
+                <td>Steve conrad</td>
+                <td>policy</td>
+                <td>18/04/2025</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PDFIconB.png" alt="">Document File</td>
+                <td>Chris Williams</td>
+                <td>Saturday</td>
+                <td>18/04/23</td>
+            </tr>
+            <tr>
+                <td class="pdf"><img src="/Image/PDFIconB.png" alt="">Document File</td>
+                <td>Jess</td>
+                <td>complaints</td>
+                <td>18/04/2025</td>
+            </tr>
+        </table>
+
+
+    </div>
+</body>
+
+</html>

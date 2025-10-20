@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- character set unicode-8 meta mainly used for SEO  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport--how it will be looks in our page -->
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: rgb(255, 0, 144);
+            color: black;
+            align-items: center;
+            border: 1px solid #4a0b0b;
+            min-width: 400px;
+        }
+
+        .box {
+            height: 300px;
+            width: 600px;
+            background-color: rgb(49, 32, 135);
+            border: 1px solid #000;
+            text-align: center;
+            gap: 5px;
+            margin: auto;
+
+
+            /* margin:auto;*/
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .box1 {
+            height: 180px;
+            width: 180px;
+            border: 2px solid black;
+            background-color: rgb(163, 255, 127);
+        }
+
+        .box2 {
+            height: 180px;
+            width: 180px;
+            border: 2px solid black;
+        }
+
+        .box3 {
+            height: 180px;
+            width: 180px;
+            border: 2px solid black;
+            background-color: rgb(163, 255, 127);
+        }
+
+        #para {
+            color: rgba(240, 248, 255, 0891);
+
+        }
+
+        #welcome {
+            color: #000;
+            border-radius: 2px solid red;
+            padding: 10px;
+            margin-top: 2px;
+            align-items: center;
+
+        }
+
+        .nav {
+            background-color: aquamarine;
+            color: #000;
+            border: 2px solid #000;
+
+        }
+
+        .section {
+            gap: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav>
+                <ul class="section">
+                    <li> <a href="index.html">Home </a> </li>
+                    <li> <a href="About.html">About </a> </li>
+                    <li> <a href="Contact.html">Contact </a> </li>
+                </ul>
+            </nav>
+        </div>
+        <h1>
+            <marquee behavior="alternate" scrollamount="5" color="lightblue">Giris Tech HUB</marquee>
+        </h1>
+
+        <div class="box">
+            <div id="welcome"><mark> <b>welcome</b></mark></div>
+            <div class="boxes">
+                <div class="box1">
+                    <p id="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam, tempore quaerat,
+                        reiciendis maxime modi vero blanditiis iure et natus numquam nam doloremque .
+                    </p>
+                </div>
+                <div class="box2">
+                    <p id="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam, tempore quaerat,
+                        reiciendis maxime modi vero blanditiis iure et natus numquam nam doloremque.
+                    </p>
+                </div>
+
+                <div class="box3">
+                    <p id="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam,
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

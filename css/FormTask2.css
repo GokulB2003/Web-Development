@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 50%;
+    min-height: 200px;
+    /* border: 1px solid #000; */
+    margin: auto
+}
+
+.form-data {
+    min-height: 100px;
+    margin: 5px;
+    width: 600px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+
+}
+
+#Registration {
+    text-decoration: underline;
+    text-align: center;
+    margin: 15px;
+}
+
+.form-data h3 {
+    text-align: center;
+    margin: 15px;
+    font-size: 12px;
+}
+
+.name,
+input[type="email"] {
+    width: 276px;
+    margin: 10px;
+    padding: 5px;
+    background-color:  rgb(233, 241, 241);
+    border:none;
+
+}
+
+.start-date {
+    width: 180px;
+    margin: 8px;
+    padding: 5px;
+    background-color:  rgb(233, 241, 241);
+    border: none;
+}
+
+input[type="date"],
+.number {
+    width: 276px;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    background-color:  rgb(233, 241, 241);
+}
+
+#underline {
+
+    width: 100%;
+}
+
+.line1 {
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+#contact {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    margin: 12px;
+    /* border: 1px solid #000; */
+    background-color: rgb(191, 202, 202);
+    border: none;
+}
+
+.Payment {
+    /* width: 380px; */
+    padding: 2px;
+
+}
+
+#dollar {
+    width: 180px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color:  rgb(233, 241, 241);
+    border: none;
+}
+
+.Anpayment {
+    width: 379px;
+    margin: 5px;
+    padding: 3px;
+    background-color:  rgb(233, 241, 241);
+    border: none;
+}
+body {
+    background-color: rgb(100, 222, 222);
+}
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+}

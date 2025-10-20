@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/FormTask.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-data">
+            <table>
+                <h2>User Experience Research Form</h2>
+                <tr><td><label for="name">Name</label></td></tr>
+                <tr>
+                    <td class="label-right">
+                        
+                        <input type="text" placeholder="First" id="name">
+                    </td>
+                    <td><input type="text" placeholder="Last" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">email</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">phone</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="number" placeholder="#### #######" required autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="adress">address</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="adress" rows="1" required autocomplete="off" id="adress" placeholder="street address"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="adress" rows="1" required autocomplete="off" id="adress" placeholder="street address Line 2"></textarea></td>
+                </tr>
+                 
+                <tr>
+                    <td class="label-right">
+                        
+                        <input type="text" placeholder="city" autocomplete="off" id="name">
+                    </td>
+                    <td><input type="text" placeholder="Region" autocomplete="off"  id="name"></td>
+                </tr>
+                 <tr>
+                    <td class="label-right">
+                        
+                        <input type="text" required autocomplete="off" placeholder="postal/Zip code" id="name">
+                    </td>
+                    <td><select id="country">
+                        <option value="Romania">Romania</option>
+                        <option value="India">India</option>
+                        <option value="Us">Us</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="Questions">Questions</label></td>
+                </tr>
+            </table>
+            <table>
+                <tr >
+                    <td clas="skills"></td>
+                    <td clas="skills">Very Good</td>
+                    <td clas="skills">Good</td>
+                    <td clas="skills">Fair</td>
+                    <td clas="skills">Poor</td>
+                    <td clas="skills">Very Poor</td>
+                </tr>
+                <tr>
+                    <td>I enjoy using the product</td>
+                    <td><input type="radio" name="f1" value="f1" class="skills"></td>
+                    <td><input type="radio" name="f1" value="f1" class="skills"></td>
+                    <td><input type="radio" name="f1" value="f1" class="skills"></td>
+                    <td><input type="radio" name="f1" value="f1" class="skills"></td>
+                    <td><input type="radio" name="f1" value="f1" class="skills"></td>
+                </tr>
+                <tr>
+                    <td>The product is intitive and easy to use</td>
+                    <td><input type="radio" name="f2" value="f2" class="skills"></td>
+                    <td><input type="radio" name="f2" value="f2" class="skills"></td>
+                    <td><input type="radio" name="f2" value="f2" class="skills"></td>
+                    <td><input type="radio" name="f2" value="f2" class="skills"></td>
+                    <td><input type="radio" name="f2" value="f2" class="skills"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
