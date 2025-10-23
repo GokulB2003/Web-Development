@@ -1,0 +1,58 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 670px;
+    background-color: #000;
+
+}
+input[type="text"],input[type="password"]
+{
+    padding: 4px;
+    margin: 3px;
+    width: 250px;
+}
+#password,#username{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:7px;
+    /* text-align: center; */
+}
+.form-Area
+{
+    border: 3px solid #029509;
+    min-height: 310px;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    position:relative;
+    /* display: inline; */
+    
+}
+tr{
+    border: 1px solid #000;
+}
+#submit{
+    border-radius: 1px solid #4513b1;
+    position: absolute;
+    left:160px;
+    background-color: rgb(0, 255, 42);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:13px;
+    cursor: pointer;
+    font-weight: 800; 
+    color: brown;
+}
+th{
+    font-size: 20px;
+    margin:20px;
+    color: #4513b1;
+}
