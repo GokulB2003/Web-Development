@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*by default mobile sathi then write for Laptop and other device.*/
+.box{
+    min-height: 450px;
+    min-width: 343px;
+    background-color: rgb(39, 90, 90);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:1px;
+    
+}
+.stImage{
+    padding:4px;
+}
+/*for laptop and oter devices*/
+@media screen and (min-width: 500px) {
+    .box{
+        background-color: brown;
+        width:350px;
+    }
+    
+}
+@media screen and (max-width:400px)
+{
+    .box{
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        margin: 3px;
+
+    }
+    .stImage{
+       justify-content: center;
+       align-items: center;
+       border: 1px solid #000;
+    }
+}
