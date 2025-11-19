@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    position: absolute;
+    height: 80px;
+    width: 94%;
+    /* border: 1px solid #000; */
+    margin: auto;
+    display: flex;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+    background-color: white;
+    /* border-radius: 5px solid #000; */
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.left-header {
+    float: left;
+    width: 30%;
+    /* border: 1px solid #000; */
+
+}
+
+.right-header {
+    float: right;
+    width: 65%;
+    /* border: 1px solid black; */
+    display: flex;
+
+}
+
+ul li {
+    /* display: flex; */
+    display: inline-block;
+
+}
+
+ul li a {
+    margin: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+.resrevation {
+    /* border: 1px solid #000; */
+    /* float: left; */
+    padding-bottom: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.shoping-icon img {
+    float: right;
+    margin-left: 20px;
+
+    /* border: 1px solid #000; */
+}
+
+.shoping-icon {
+    float: right;
+}
+
+.left-header h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 6px;
+    margin: 7px;
+}
+
+.resrevation {
+    top: 0px;
+}
+
+.resrevation button {
+    font-size: 20px;
+    padding: 4px;
+    margin-top: 10px;
+    background-color: yellow;
+    color: black;
+    border-radius: 2px solid black;
+
+}
+
+.resrevation button:hover {
+    padding: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+.resrevation button:active {
+    background-color: blue;
+    color: white;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: red;
+
+}
+
+.thali img {
+    width: 100%;
+    height: 800px;
+    /* margin: 10px; */
+}
+
+.left-right {
+    display: flex;
+
+}
+
+.reservation-button button {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 2px solid black;
+    font-weight: 700;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.reservation-button button:hover {
+    background-color: #B0CE88;
+    text-decoration: underline;
+    padding: 10px;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.reservation-button button:active {
+    padding: 14px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-title h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.menu {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu h4 {
+    margin-top: 25px;
+}
+
+.text {
+    color: white;
+}
+
+.thali {
+    position: relative;
+}
+
+.all-text {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about p {
+    color: white;
+}
+
+body {
+    background-image: url("../Image/hotel_glass.jpg")
+        /* position:relative; */
+}
+
+.motor-bike img {
+    margin-left: 30px;
+}
+
+.motor-bike {
+    margin-top: 7px;
+}
+
+.motor:hover {
+    cursor: pointer;
+}
+
+
+body {
+    overflow-x: hidden;
+}
