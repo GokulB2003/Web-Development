@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fevicon.ico" type="images/x-icon">  
+</head>
+<body>
+
+    <div class="container">
+
+        <form action="submit">
+            <div>
+                <label for="name">Enter Name</label>
+                <div><input type="text" placeholder="Enter name" required autocomplete="off" pattern="^[A-Za-z ]{1,50}$"></div>
+            </div>
+            <div><label for="phone" autofocus="required">Phone Number</label></div>
+            <div><input type="phone" id="phone" required autocomplete="off" pattern="^[0-9]{10}$"></div>
+
+            <div><label for="Email">Email</label></div>
+            <div><input type="email" id="Email"></div>
+
+            <div><label for="password">Enter password</label></div>
+            <div>
+            <input type="password">
+
+            <!-- Create a form with readonly input field. -->
+
+            </div>
+            <div><input type="file" method="post" enctype="multipart/form"></div>
+            <div ><button type="submit" alt="">submit</button></div>
+        </form>
+    </div>
+</body>
+</html>
