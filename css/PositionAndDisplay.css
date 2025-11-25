@@ -1,0 +1,329 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.back img {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    /* background-color: white; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 70px;
+
+}
+
+.header .left {
+    width: 30%;
+
+}
+
+.left h1 {
+    margin-left: 110px;
+    font-weight: 700;
+    /* padding:10px; */
+    color: rgb(221, 95, 11)
+}
+
+.left h1:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.header .right {
+    padding: 10px;
+    display: flex;
+}
+
+.header .right ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header .right ul li a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 30px;
+    color: white;
+    font-style: bold;
+}
+
+.header .right ul li a:hover {
+    cursor: pointer;
+    color: rgb(242, 14, 14);
+    text-decoration: underline;
+    background-color: darkgray;
+    border-radius: 5px;
+
+}
+
+.search {
+    margin-left: 50px;
+
+}
+
+.search button:hover {
+    background-color: azure;
+    cursor: pointer;
+    color: black;
+
+}
+
+.search button:active {
+    background-color: rgb(176, 63, 32);
+    cursor: pointer;
+    color: white;
+
+}
+
+.search input[type="text"] {
+    margin-top: 8px;
+    background: transparent;
+    padding: 5px;
+
+}
+
+.search input[type="text"]::placeholder {
+    color: white;
+    padding: 3px;
+}
+
+.search button {
+    margin-top: 8px;
+    color: white;
+    background-color: rgb(225, 94, 13);
+    padding: 5px;
+    width: 90px;
+    border-radius: 7px;
+    padding: 9px;
+
+}
+
+.midsection {
+    position: absolute;
+    top: 100px;
+    margin: 40px;
+    width: 100%;
+    min-height: 460px;
+    /* border: 1px solid #eae1e1; */
+    display: flex;
+
+}
+
+.left-section {
+    width: 60%;
+    /* border: 1px solid #e7dfdf; */
+    min-height: 460px;
+    margin-left: 40px;
+    color: white;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.right-section {
+    width: 50%;
+    /* border: 1px solid #efe7e7; */
+    min-height: 460px;
+    margin: 40px;
+}
+
+.left-section .join-us button {
+    background-color: rgb(224, 104, 18);
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.left-section .join-us button:hover {
+    background-color: #e7dfdf;
+    color: black;
+    cursor: pointer;
+}
+
+.left-section .join-us button:active {
+    padding: 10px;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.first h1 {
+    margin: 10px;
+}
+
+.second h1 {
+    color: rgb(216, 44, 5);
+    margin: 10px;
+}
+
+.third h1 {
+    margin: 10px;
+}
+
+.para {
+    width: 90%;
+}
+
+.para p {
+    margin: 10px;
+    justify-content: justify;
+    color: white;
+
+}
+
+form {
+    margin: auto;
+    min-height: 90%;
+    width: 60%;
+    /* border: 1px solid #e1d6d6; */
+    background-color: black;
+    border: 1px solid #e74242;
+    padding: 10px;
+}
+
+.login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login button,
+.submit button {
+
+    display: flex;
+    width: 179px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: auto;
+
+
+}
+.login button,
+.submit button:hover
+{
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer;
+}
+
+.login button {
+    color: chocolate;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: white;
+}
+
+form input[type="text"],
+input[type="password"] {
+    padding: 10px;
+
+    background: transparent;
+    border-bottom: 2px white;
+
+}
+
+.submit button {
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    margin-left: 70px;
+    padding: 30px;
+}
+
+.submit button {
+    margin: auto;
+}
+
+.account {
+    color: white;
+    text-align: center;
+}
+
+.account h2 {
+    margin-top: 15px;
+}
+
+.sign-in {
+    color: white;
+    display: inline;
+
+}
+
+.sign h2 {
+    /* margin:auto; */
+
+    text-align: center;
+    color: chocolate;
+}
+.sign h2:hover{
+color:white;
+cursor:pointer;
+
+}
+.sign {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sign h3 {
+    margin-left: 10px;
+
+}
+
+.log {
+    color: white;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+}
+
+.underline {
+    border: none;
+    border-bottom: 2px solid rgb(227, 219, 219);
+    outline: none;
+    /* width: 100%; */
+    /* font-size: 18px; */
+    padding: 5px 0;
+    /* background: transparent; */
+}
+
+.underline::placeholder {
+    color: white;
+    opacity: 0.5;
+}
