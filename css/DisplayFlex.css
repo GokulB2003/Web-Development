@@ -1,0 +1,634 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  min-height: 200px;
+  border: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.all{
+    min-height: 120px;
+    width: 100%;
+    gap:20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-start
+{
+ width: 40%;
+/* border: 1px solid #000; */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+ border: 1px dashed #000;
+height: 230px;
+
+ /* gap:2px; */
+}
+.heading
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.flex-start .box
+{  height:30px;
+    width: 100%;
+    gap:5px;
+    display: flex;
+    /* border: 1px solid #000; */
+    margin:15px;    
+}
+.flex-start .box1,.box2
+{  height:30px;
+    width: 100%;
+    gap:5px;
+    display: flex;
+    margin: 10px;
+
+}
+
+.flex-start .box .small
+{
+    width:100px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box .medium
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-start .box .medium1
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box .large
+{
+    width:230px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-start .box1 .small
+{
+    width:150px;
+    display: flex;
+    align-items: space-between;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box1 .medium
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box1 .medium1
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box1 .large
+{
+    width:210px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box2 .small
+{
+    width:120px;
+    display: flex;
+    align-items: space-between;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box2 .medium
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start .box2 .medium1
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end
+{
+    width:40%;
+    /* margin:50px 0 0 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+     border: 1px dashed #000;
+    height: 230px; 
+    margin-left: 50px; 
+    
+}
+
+.flex-end .box,.box1{
+    width:100%;
+    display: flex;
+    margin: 10px;
+    gap:10px;
+    height:30px;
+}
+
+.flex-end .box .small
+{
+    width:100px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box .medium
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end .box .medium1
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box .large
+{
+    width:230px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end .box1 .small
+{
+    width:150px;
+    display: flex;
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box1 .medium
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box1 .medium1
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box1 .large
+{
+    width:210px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box2 .small
+{
+    width:120px;
+    /* display: flex; */
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box2 .medium
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end .box2 .medium1
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+
+/* for box-2 */
+.second
+{
+     min-height: 120px;
+    width: 100%;
+    gap:20px;
+    display: flex;
+    flex-direction: row;
+}
+.flex-start1
+{
+    min-height:140px;
+    width:40%;
+     border: 1px dashed #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.flex-start1 .box
+{  height:30px;
+    width: 100%;
+    gap:5px;
+    display: flex;
+    /* border: 1px solid #000; */
+    margin:15px;    
+}
+.flex-start1 .box1,.box2
+{  height:30px;
+    width: 100%;
+    gap:5px;
+    display: flex;
+    margin: 10px;
+
+}
+
+.flex-start1 .box .small
+{
+    width:100px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box .medium
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-start1 .box .medium1
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box .large
+{
+    width:230px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-start1 .box1 .small
+{
+    width:150px;
+    display: flex;
+    align-items: space-between;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box1 .medium
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box1 .medium1
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box1 .large
+{
+    width:210px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box2 .small
+{
+    width:120px;
+    display: flex;
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box2 .medium
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start1 .box2 .medium1
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end1
+{
+    width:40%;
+    /* margin:50px 0 0 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border: 1px dashed #000;
+    height: 230px;  
+     margin-left: 50px; 
+    
+}
+
+.flex-end1 .box,.box1{
+    width:100%;
+    display: flex;
+    margin: 10px;
+    gap:10px;
+    height:30px;
+}
+
+.flex-end1 .box .small
+{
+    width:100px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box .medium
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end1 .box .medium1
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box .large
+{
+    width:230px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end1 .box1 .small
+{
+    width:150px;
+    display: flex;
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box1 .medium
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box1 .medium1
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box1 .large
+{
+    width:210px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box2 .small
+{
+    width:120px;
+    /* display: flex; */
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box2 .medium
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end1 .box2 .medium1
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+/* started third row */
+
+
+.third
+{
+    min-height: 120px;
+    width: 100%;
+    gap:20px;
+    display: flex;
+    flex-direction: row;
+}
+.flex-start2
+{
+    min-height:140px;
+    width:40%;
+     border: 1px dashed #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.flex-start2 .box
+{  height:30px;
+    width: 100%;
+    gap:5px;
+    display: flex;
+    /* border: 1px solid #000; */
+    margin-left:15px;    
+}
+.flex-start2 .box1,.box2
+{  height:30px;
+    width: 100%;
+    gap:5px;
+    display: flex;
+    margin: 10px;
+
+}
+
+.flex-start2 .box .small
+{
+    width:100px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box .medium
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-start2 .box .medium1
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box .large
+{
+    width:230px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-start2 .box1 .small
+{
+    width:150px;
+    display: flex;
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box1 .medium
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box1 .medium1
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box1 .large
+{
+    width:210px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box2 .small
+{
+    width:120px;
+    display: flex;
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box2 .medium
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-start2 .box2 .medium1
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end2
+{
+    width:40%;
+    /* margin:50px 0 0 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+     border: 1px dashed #000;
+    height: 230px;
+     margin-left: 50px;   
+    
+}
+
+.flex-end2 .box,.box1{
+    width:100%;
+    display: flex;
+    margin: 10px;
+    gap:10px;
+    height:30px;
+}
+
+.flex-end2 .box .small
+{
+    width:100px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box .medium
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end2 .box .medium1
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box .large
+{
+    width:230px;
+    height: 100%;
+    background-color: blue;
+}
+
+.flex-end2 .box1 .small
+{
+    width:150px;
+    display: flex;
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box1 .medium
+{
+    width:80px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box1 .medium1
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box1 .large
+{
+    width:210px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box2 .small
+{
+    width:120px;
+    /* display: flex; */
+    /* align-items: space-between; */
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box2 .medium
+{
+    width:20px;
+    height: 100%;
+    background-color: blue;
+}
+.flex-end2 .box2 .medium1
+{
+    width:50px;
+    height: 100%;
+    background-color: blue;
+}
+
