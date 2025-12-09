@@ -172,5 +172,32 @@
     justify-content: center;
     align-items: center;
 }
+#heading
+{
+    display: flex;
+    justify-content: center;
+    color:#0E509C;
+    margin-top:10px;
+}
+/* .box2 ul li
+{
+    display: flex;
+    justify-content: center;
+    justify-content: justify;
+    text-align: left;
+
+} */
+.sub-heading h4 
+{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    color:black;
+    text-shadow: 1px 1px 2px pink;;
+    text-align: left;
+    /* list-style:circle; */
+    font-size: 1.3em;
+    gap:10px;
+}
 
 
