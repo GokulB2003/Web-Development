@@ -1,0 +1,257 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.container
+{
+    display: grid;
+    width:100%;
+    margin: auto;
+    border: 1px solid #000;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 70px 620px 400px 400px 400px 120px; 
+    grid-template-areas: "header-menu header-menu header-menu"
+    "main-bar main-bar main-bar"
+    "three-cards three-cards three-cards"
+    "about about about"
+    "doing doing doing"
+    "services services services";
+
+   
+
+}
+.header-menu
+{
+    display:grid;
+    grid-area: header-menu;
+    /* border: 1px solid #000; */
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+.header h1{
+      margin-left:10px;
+      font-style: italic;
+      box-shadow: green;
+      
+}
+.main-bar
+{
+    display: grid;
+    grid-area: main-bar;
+    position: relative;
+    border: 1px solid #000;
+}
+.heading{
+    position: absolute;
+    left:10%;
+    top:30%;
+}
+.heading h2{
+    text-decoration: double;
+    font-size: 40px;
+
+}
+.heading p{
+    text-decoration: solid;
+    font-size: 20px;
+    color:rgb(163, 101, 21)
+}
+.heading button{
+    width:100px;
+    text-align: center;
+    color:white;
+    border-radius: 10px;
+    background-color: black;
+    height:30px;
+    text-shadow: 2px red;
+
+}
+.heading button:hover{
+    cursor:pointer;
+    background-color: chocolate;
+}
+
+.three-cards{
+    display: grid;
+    grid-area: three-cards;
+    border: 1px solid #000;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 400px;
+    grid-template-areas: "card1 card2 card3";
+    gap:5px;
+    margin-top: 10px;
+    
+}
+.card1{
+    display: grid;
+    grid-area:card1;
+    border: 1px solid #000;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.card1 h1,p{
+    color:white
+    
+    
+}
+.card2{
+    display: grid;
+    grid-area:card2;
+    border: 1px solid #000;
+    background-color: rgb(131, 240, 240);
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+     width:100%;
+   
+    
+}
+.card2 h2{
+
+}
+.card2 h2,p{
+    color: white;
+    text-align: center;
+
+}
+.card3{
+
+    display: grid;
+    grid-area:card3;
+    border: 1px solid #000;
+    background-color: rgb(35, 200, 145);
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+     width:100%;
+    
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:50px;
+}
+.three-cards .card3 h2,p{
+    color:white;
+}
+
+.about{
+    display: grid;
+    grid-area: about;
+    border: 1px solid #000;
+    margin: top 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    margin-top:15px;
+
+}
+.about-company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20%px;
+    padding:70px;
+    flex-wrap: wrap;
+    
+}
+.about-company p{       
+    color: black;
+    text-align: center;
+    
+}
+.know{
+    margin-top: 40px;
+}
+.know a{
+    text-decoration: none;
+}
+.doing
+{
+    display: grid;
+    grid-area:doing;
+    grid-template-rows: 400px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "left right";
+    margin-top:10px;
+    gap:5px;
+    border: 1px solid #000;
+
+}
+.left{
+    display: grid;
+    grid-area: left;
+    border: 1px solid #000;
+}
+.right
+{
+    display: grid;
+    grid-area: right;
+    background-color: rgb(42, 213, 156);
+    border: 1px solid #000;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.data h2{
+    display: flex;
+    color:white
+}
+.data p{
+    display: flex;
+    padding:30px;
+
+}
+.data button{
+    border-radius: 5px;
+    background-color: white;
+    color:black;
+    border: 1px solid #000;
+}
+.data button:hover{
+    background-color: black;
+    cursor: pointer;
+    color:white;
+}
+ .services
+{
+    display: grid;
+    grid-area: services;
+    align-items: center;
+    width:100%;
+    height: 120px;
+    border: 1px solid #000;  
+    margin-top:10px;
+} 
+.s{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+
+
