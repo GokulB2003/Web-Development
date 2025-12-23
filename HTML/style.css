@@ -10,7 +10,7 @@
     margin: auto;
     border: 1px solid #000;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 70px 620px 400px 400px 400px 120px 300px 300px;
+    grid-template-rows: 70px 620px 400px 400px 400px 120px 300px 300px 100px;
     grid-template-areas: "header-menu header-menu header-menu"
         "main-bar main-bar main-bar"
         "three-cards three-cards three-cards"
@@ -18,7 +18,8 @@
         "doing doing doing"
         "services services services"
         "services-card services-card services-card"
-        "another-service another-service another-service";
+        "another-service another-service another-service"
+        "footer footer footer";
 
 }
 
@@ -60,7 +61,7 @@
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     color: red;
     padding: 2px;
 
@@ -73,6 +74,15 @@
     list-style: none;
     text-decoration: none;
 
+}
+
+.menu li a:hover {
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: bisque 5px;
+    text-decoration: dotted;
 }
 
 .main-bar {
@@ -335,6 +345,7 @@ p {
     gap: 5px;
     margin: auto;
 
+
 }
 
 .service1 {
@@ -457,4 +468,166 @@ p {
 
 .thali p {
     padding: 10px;
+}
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 40px;
+}
+
+.footer h2 {
+    font-size: 13px;
+}
+
+@media only screen and (max-width:480px) {
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+    .container {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .three-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        /* z-index: 1; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+    }
+
+    .info p {
+        /* text-align: center; */
+        color: aliceblue;
+    }
+
+    .card2 {
+        width: 100%;
+    }
+
+    .card3 {
+        width: 100%;
+    }
+
+    .main-bar {
+        width: 100%;
+    }
+
+    .menu {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .know{
+        width: 100%;
+        
+    }
+    .know nu
+    {
+
+    }
+
+    .about-company {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        /* min-height: 200px; */
+    }
+
+    .doing {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .doing .left {
+        width: 100%;
+
+    }
+
+    .doing .right {
+        width: 100%;
+
+    }
+
+    .servives {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .s {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .service1,
+    .service2,
+    .service3 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .another-service {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+
+    .service4,
+    .service5,
+    .service6 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+
+
 }
