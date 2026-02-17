@@ -599,3 +599,146 @@ var s=101;
 console.log(vari);//generate error same for const...
 
 let vari=10;
+//global scope-var
+//functional scope-let outside the func we cant access the 
+//const -
+function counter()
+{
+    let count=0;
+    function newcounter()
+    {
+        count++;
+        return count;
+    }
+    return newcounter();
+}
+const fresult=counter();
+console.log(fresult);
+console.log(fresult());
+console.log(counter());
+console.log(counter());
+
+//bank balance example...
+let bank={
+    balance:400,
+    name:"sham",
+    deposit:function(money)
+    {
+        if(typeof money==="number" && money>0)
+        {
+            this.balance+=money;
+        }
+        return this.balance;
+    },
+    getbalance:function getbal()
+    {
+        if(this.balance>0)
+        {
+            return this.balanace;
+        }
+    }
+
+
+}
+console.log(bank.deposit(500));
+console.log(bank.getbalance());
+//but here if we write the this.balance="ram"; then also its work so we need to make its a private by writing its outside the function so inside the function can access its easiky..
+function BankAccount()
+{
+    let balance=100;//private
+    let bank={
+        name:"sham",
+        deposit:function addmoney(money)
+        {
+            balance+=money;
+            return balance;
+        },
+        Withdrawl:function remove(money)
+        {
+            if(money>balance)
+            {
+                return "Insufficient Balance:";
+            }
+            else
+            {
+                return balance-money;
+            }
+        }
+      
+
+    }
+      return bank;
+
+
+}
+const customer=BankAccount();
+console.log(customer.deposit(800));
+console.log(customer.Withdrawl(100));
+
+//HIgher Order function........call back
+function table()
+{
+    function two(n)
+    {
+        for(let i=1; i<=10; i++)
+        {
+            console.log(i*n+" ");
+        }
+    }
+    return two(2);
+}
+let result=table();
+console.log(result);
+
+//For Each Loop
+let newArrr=[10,20,30,40];
+newArrr.forEach((val)=>{
+    console.log(val);
+})
+
+//Map.
+/*map() method is used for creating a new array by performing a function on each array element.map() method does not change the original array.*/
+//let newAr=[10,20,30,40];
+let mapm=newAr.map(myfunction)
+{
+    for(let i=0; i<mapm.length; i++)
+    {
+        console.log(anss[i]);
+    }
+}
+/*function myfunction(val,newAr)
+{
+    return val*2;
+
+}*/
+/*filter(): this method is used for creating a new array with elements that pass the test case means this method can filter the data from the original array using a specified condition and store it in a new array.
+ */
+/*
+let newAr=[10,20,30,40];
+let  result=newAr.filter(myfunction)
+{
+    console.log(result);
+}
+function myfunction(val,newArr)
+{
+    if(val%2==0)
+    {
+        return val;
+    }
+}
+*/
+
+/*it is mainly used perform the operation on array and generate a single value*/
+let newar=[10,20,30,40,50];
+let r=newar.reduce(myfunction,0)
+{
+    console.log(r);
+}
+function myfunction(val,newar)
+{
+    return result+val;
+}
+
+let wet=document.getElementById("wet-n").innerHTML;
+console.log(wet);
+
