@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container
+{
+    width:80%;
+    display: grid;
+    min-height: 200px;
+    margin:auto;
+    border: 1px solid #000;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px 300px 300px 300px 80px;
+    grid-template-areas: "header-menu header-menu header-menu header-menu"
+                          "slider slider slider slider"
+                          "left-right left-right left-right left-right"
+                          "four-card four-card four-card four-card"
+                          "footer footer footer footer";  
+}
+.header-menu
+{
+    display:grid;
+    grid-area: header-menu;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 80px;
+    grid-template-areas: "header menu";
+}
+.header{
+    display: grid;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.header img{
+    margin-left:10px;
+}
+.menu{
+    display:grid;
+    grid-area: menu;
+  
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap:10px;
+    
+}
+.menu li a{
+    justify-content: space-between;
+    text-decoration: none;
+}
+.slider{
+    display: grid;
+    grid-area: slider;
+    border: 1px solid #000;
+    background-color: rgb(142, 86, 13);
+    width:100%;
+}
+.left-right{
+    display: grid;
+    grid-area: left-right;
+    border: 1px solid #000;
+    gap:5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 300px;
+    grid-template-areas: "left left right right";
+    margin-top: 5px;
+}
+.left{
+    display: grid;
+    grid-area: left;
+    border: 1px solid #000;
+}
+.right{
+    display: grid;
+    grid-area: right;
+    border: 1px solid #000;
+}
+.four-card{
+    display: grid;
+    grid-area: four-card;
+    border: 1px solid #000;
+    margin-top: 5px;
+    grid-column: repeat(4,1fr);
+    grid-template-rows: 300px;
+    grid-template-areas:"card1 card2 card3 card4";
+    gap:5px;   
+}
+.card1{
+    display: grid;
+    grid-area: card1;
+    border: 1px solid #000;
+    
+
+}
+.card2{
+       display: grid;
+    grid-area: card2;
+    border: 1px solid #000;
+
+}
+.card3{
+    display: grid;
+    grid-area: card3;
+    border: 1px solid #000;
+
+}
+.card4{
+    display: grid;
+    grid-area: card4;
+    border: 1px solid #000;
+
+}
+.footer{
+    display: grid;
+    grid-area: footer;
+    margin-top: 5px;
+    border: 1px solid #000;
+  
+}
+
+

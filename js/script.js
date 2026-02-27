@@ -668,8 +668,7 @@ function BankAccount()
 
     }
       return bank;
-
-
+      
 }
 const customer=BankAccount();
 console.log(customer.deposit(800));
