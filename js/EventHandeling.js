@@ -11,9 +11,8 @@
  goodmorning.addEventListener(('click'),()=>{
     goodmorning.innerText="Chalo ab kalm pe lag jao";
     goodmorning.style.backgroundColor="pink";
-
  });
  goodmorning.addEventListener(('click'),()=>{
     goodmorning.style.color="green";
     goodmorning.style.fontStyle="italic";
- })
+ });
