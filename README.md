@@ -1,7 +1,7 @@
 # 🌐 Web Development Practice Repository
 
 This repository contains my **Web Development practice files and mini projects**.
-It includes hands-on practice of **HTML, CSS, JavaScript, Bootstrap, Git, and GitHub**, along with important JavaScript concepts and small projects.
+It includes hands-on practice of **HTML, CSS, JavaScript, Bootstrap, Git, and GitHub**, along with important JavaScript concepts and  projects.
 
 The goal of this repository is to **strengthen my frontend development skills** by implementing concepts practically.
 
@@ -41,6 +41,7 @@ The goal of this repository is to **strengthen my frontend development skills** 
 * Callback functions
 * Function call stack
 * Higher order functions
+* Media Query
 
 ### 🧠 JavaScript Concepts
 
