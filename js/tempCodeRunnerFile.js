@@ -1,9 +1,4 @@
-const s1=new Promise((resolve,reject)=>{
-    // resolve("hello");
-     reject("Error");
-
-}).then((message)=>{
-    console.log(message);
-}).catch((err)=>{
-    console.log(err);
-})
+const list=document.getElementById("list");
+const li=document.createElement("li");
+const textt=document.innserText("Water");
+list.appendChild(textt);
