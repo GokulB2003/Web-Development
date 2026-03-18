@@ -1,6 +1,12 @@
+/*const list=document.getElementById("list");
 const li=document.createElement("li");
-const list=document.getElementById("list");
-li.innerText="Water";
-list.append(li);
-
-/**/ */
+li.innerText="water";
+list.appendChild(li);
+*/
+const heading=document.getElementById("heading");
+function show()
+{
+    const h1=document.createElement("h1");
+    h1.innerHTML="hello good morning";
+    
+}
