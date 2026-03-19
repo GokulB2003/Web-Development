@@ -4,37 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        // document.write("Hello good morning:");
-
-        const heading=document.getElementById("heading");
-        heading.addEventListener('click',()=>{
-
-        function show()
-        {
-           const heading=document.getElementById("heading");
-           heading.style.color="red";
-           heading.innerText="text changed...";
-
-
-        }
-
-        });
-       
-        //const heading=document.getElementById("heading");
-      
-    </script>
-   
 </head>
 <body>
 
+
     <h1 id="heading">Hello good morning, welcome</h1>
-    <button type="submit" onmouseleave="show()">click here</button>
+    <button type="submit" onclick="show()">click here</button>
     <ol id="list">
         <li id="hea">heading</li>
         <li></li>
         <li></li>
     </ol>
      <!-- <script src="/js/practise.js"></script> -->
+
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+       <script>
+        // document.write("Hello good morning:");
+        
+        const heading=document.getElementById("heading");
+      //  heading.addEventListener('click',()=>{
+
+      function show()
+        {
+           const heading=document.getElementById("heading");
+           heading.style.color="red";
+           heading.innerText="text changed...";
+           const newElement=document.createElement("h2");
+           newElement.style.color="green";
+           newElement.style.display="flex";
+           newElement.style.justifyContent="center";
+           newElement.style.alignItems="center";
+           newElement.innerHTML="newly create";
+           heading.appendChild(newElement); 
+        //n.innerHTML=take;
+        }
+
+        const take=prompt("Enter the number");
+        console.log(take);
+        let start=document.getElementById("start");
+        //  let abc=Number(take);                       /******hi comment kadha run karnyasathi*/
+    start.addEventListener('click',()=>
+    {
+           //console.log(abc);
+             setInterval(()=>{
+            console.log("newly added");
+            const n=document.createElement("h4");
+            //console.log(abc);
+            n.innerHTML=abc;
+            heading.appendChild(n);
+            abc++;
+            //heading.appendChild(n);
+           },10000);
+    });
+    stop.addEventListener('click',()=>{
+
+    });
+        // let abc=Number(take);
+     
+
+
+
+         //   });
+       
+        //const heading=document.getElementById("heading");
+     
+
+    </script>
 </body>
 </html>
