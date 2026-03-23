@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadBtn()">
+    <div class="container">
+        <div class="calculator" style="background-color: black; width: 478px; height:320px; border: 2px solid white;">
+            <div id="text-inpt">
+                <input type="text">
+            </div>
+            <div class="btn-panel">
+                <table id="tab" style="width:100px; border: 5px solid white;">
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        function loadBtn() {
+            let btn_panel, text_input;
+            let tab = document.getElementById("tab");
+            let arr = [
+                ['1', '2', '3', '+'],
+                ['4', '5', '6', '-'],
+                ['7', '8', '9', '*'],
+                ['0', '/', '.', '=']
+            ]
+            text_input = document.getElementById("text-inpt");
+            btn_panel = document.getElementById("btn-panel");
+
+
+            for (let i = 0; i < arr.length; i++) {
+                let tr = document.createElement("tr");
+                for (let j = 0; j < arr[i].length; j++) {
+                    let col = document.createElement("td");
+                    let btn = document.createElement("input");/*<input type="button">*/
+                    btn.setAttribute("type", "button");
+                    btn.setAttribute("value", arr[i][j]);
+                    btn.style.width = "113px";
+                    btn.style.height = "50px";
+                    btn.style.color = "black";
+                    btn.style.backgroundColor = "white";
+                    // tab.appendChild(btn);
+                    col.appendChild(btn);
+                    tr.append(col);
+
+                }
+               // col.append(btn);
+                
+                tab.append(tr);
+
+
+            }
+            btn_panel.appendChild(tab);
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.container
+{
+    height: 400px;
+    width: 100hw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text-inpt input{
+    color:white;
+    width:473px;
+    height: 50px;
+}
+.btn-panel{
+    height:100%;
+    width:100%;
+}
