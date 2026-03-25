@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="display: flex; justify-content: center; align-items: center;">
+        <input type="text" name="name" value="" id="name">
+        <button name="" type="submit" id="btn">click here</button> 
+        <div></div>
+        
+    </form>
+    <script>
+       
+       
+        console.log("hello");
+        let btn=document.getElementById("btn");
+        btn.addEventListener('click',(e)=>{
+            e.preventDefault();
+        btn.style.backgroundColor="green";
+        btn.style.color="white";
+        const name1=document.getElementById("name").value;
+        console.log(name1);
+        const div=document.querySelector("div");
+        let h1=document.createElement("h1");
+        h1.style.color="red";
+        console.log(name1);
+        if(name1.length===0)
+        {
+            h1.innerHTML="Empty"; 
+        }
+        else{
+            h1.innerHTML=name1;
+        }
+        const s=div.appendChild(h1);
+        s.style.display="flex";
+        s.style.alignItems="center";
+        s.style.justifyContent="center";
+
+        })
+        btn.addEventListener('dblClick',()=>{
+            btn.style.backgroundColor="white";
+            btn.style.color="black";
+
+        })
+
+
+
+    </script>
+</body>
+</html>

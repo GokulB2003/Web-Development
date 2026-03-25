@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; display: flex; justify-content: center; align-items: center;">
+    <form
+        style="display: flex; justify-content: center; align-items: center; height: 400px; width: 400px; flex-direction: column; border: 1px solid red;background-color: aquamarine;">
+
+        <h1>Calculator</h1>
+        <input type="text" value="" id="first" placeholder="first Number" style="width: 300px; height: 30px;">
+        <br>
+        <input type="text" value="" id="second" placeholder="second-number" style="width: 300px; height: 30px;">
+        <br>
+        <input type="text" name="" value="" id="result" placeholder="result" style="width: 300px; height: 30px;">
+        <br>
+        <div class="operatin">
+            <button id="add" style="width: 90px;">add</button>
+            <button id="sub" style="width: 90px;">sub</button>
+            <button id="mul" style="width: 90px;">mul</button>
+            <button id="div" style="width: 90px;">div</button>
+        </div>
+
+    </form>
+    <script>
+
+        let add = document.getElementById("add");
+        let sub = document.getElementById("sub");
+        let mul = document.getElementById("mul");
+
+        add.addEventListener('click', (e) => {
+
+            e.preventDefault();
+            let first = document.getElementById("first");
+            let fval = first.value;
+            let second = document.getElementById("second");
+            let sval = second.value;
+
+            let third = document.getElementById("result");
+            let result = Number(fval) + Number(sval);
+            third.value = result;
+            add.style.backgroundColor = "green";
+            add.style.color = "white";
+
+             div.style.backgroundColor = "white";
+            div.style.color = "black";
+
+            sub.style.backgroundColor = "white";
+            sub.style.color = "black";
+
+            mul.style.backgroundColor = "white";
+            mul.style.color = "black";
+
+            add.style.borderRadius="5px";
+        });
+
+        sub.addEventListener('click', (e) => {
+            e.preventDefault();
+            let first = document.getElementById("first");
+            let fval = first.value;
+            let second = document.getElementById("second");
+            let sval = second.value;
+            sub.style.backgroundColor = "green";
+            sub.style.color = "white";
+
+            div.style.backgroundColor = "white";
+            div.style.color = "black";
+
+            add.style.backgroundColor = "white";
+            add.style.color = "black";
+
+            mul.style.backgroundColor = "white";
+            mul.style.color = "black";
+
+            let third = document.getElementById("result");
+            let result = Number(fval) - Number(sval);
+            third.value = result;
+
+            sub.style.borderRadius="5px";
+
+        });
+
+        mul.addEventListener('click', (e) => {
+            e.preventDefault();
+            let first = document.getElementById("first");
+            let fval = first.value;
+            let second = document.getElementById("second");
+            let sval = second.value;
+
+            mul.style.backgroundColor = "green";
+            mul.style.color = "white";
+            div.style.color = "black";
+            add.style.backgroundColor = "white";
+            add.style.color = "black";
+            sub.style.backgroundColor = "white";
+            sub.style.color = "black";
+            //div.style.backgroundColor = "white";
+            let third = document.getElementById("result");
+            let result = Number(fval) * Number(sval);
+            third.value = result;
+
+            mul.style.borderRadius="5px";
+        });
+
+        div.addEventListener('click', (e) => {
+            e.preventDefault();
+            let first = document.getElementById("first");
+            let fval = first.value;
+            let second = document.getElementById("second");
+            let sval = second.value;
+
+            div.style.backgroundColor = "green";
+            div.style.color = "white";
+
+            sub.style.backgroundColor = "white";
+            sub.style.color = "black";
+
+            add.style.backgroundColor = "white";
+            add.style.color = "black";
+
+            mul.style.backgroundColor = "white";
+            mul.style.color = "black";
+            let third = document.getElementById("result");
+            let result = Number(fval) / Number(sval);
+            third.value = result;
+
+            div.style.borderRadius="5px";
+        });
+
+
+    </script>
+</body>
+
+</html>
