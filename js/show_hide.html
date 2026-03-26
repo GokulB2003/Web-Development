@@ -1,0 +1,42 @@
+<!-- 3. Show/Hide Element
+Description: Toggle visibility of a div.
+Practice: style.display -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" style="height: 400px; width: 400px; background-color: green; text-decoration: dotted; display:flex;">
+         <div id="show">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, pariatur. Similique sequi dolorum reiciendis minima optio, ipsa voluptatibus quibusdam nostrum!</p>
+    </div>
+    <div style="position: fixed;"><button id="click">click me</button></div>
+    </div>
+   
+    <script>
+       
+        let click=document.getElementById("click");
+        click.addEventListener('click',()=>{
+             let show=document.getElementById("show");
+             if(show.style.display==="none")
+             {
+                 show.style.display="block";
+               
+
+             }
+             else
+             {
+                 show.style.display="none";
+                 
+
+             }
+           
+
+        })
+       
+    </script>
+</body>
+</html>

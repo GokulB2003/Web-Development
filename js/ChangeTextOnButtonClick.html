@@ -1,0 +1,38 @@
+<!-- 1. Change Text on Button Click
+Description: Change paragraph text when a button is clicked.
+Practice: getElementById, innerText -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: center; flex-direction: column;">
+    <div style="display: flex; justify-content: center; align-items: center; color: red;">
+        <h1  id="good">good morning</h1>
+    </div>
+     <!-- <div id="afternoon">good afternoon</div> -->
+     <button id="change">change me</button>
+     <script>
+       let flag=true;
+        let change=document.getElementById("change");
+        change.addEventListener('click',()=>{
+        if(flag)
+        {
+         let good=document.getElementById("good");
+         good.innerHTML="good morning";
+         flag=false;
+        }
+        else
+        {
+            good.innerHTML="good afternoon";
+            flag=true;
+        }
+     
+        })
+       
+
+     </script>
+</body>
+</html>

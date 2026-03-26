@@ -1,0 +1,47 @@
+<!-- 4. Input Value Display
+Description: Show input text in a paragraph.
+Practice: value -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <form action="" style="border: 2px solid black; padding:10px">
+        <div class="center" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+             <input type="text" value="" id="input" placeholder="enter text" style="height: 40px; width:250px" >
+        <button id="btn" style="height:50px; margin: 10px; width: 250px;">show</button>
+        <button id="btnclear" style="height:50px; margin: 10px; width: 250px;">clear</button>
+        <div name="" id="textbox" style="height: 40px; width:250px; border: 2px solid green;" ></div>
+        </div>
+       
+    </form>
+    <script>
+        let btn=document.getElementById("btn");
+       
+        btn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            let input=document.getElementById("input");
+            let val=input.value;
+
+            
+            let textarea=document.getElementById("textbox");
+            let p=document.createElement("p");
+            p.textContent=val;
+            
+            textarea.appendChild(p);  
+        })
+        btnclear.addEventListener('click',(e)=>{
+            preventDefault();
+            let textarea=document.getElementById("textbox");
+            textarea.innerHTML="";
+        })
+    </script>
+</body>
+</html>

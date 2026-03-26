@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><button id="btn" onclick="countb()">Click Me</button></div>
+    <div id="show" style="height: 100px; width: 100px;"></div>
+    <script>
+        let btn=document.getElementById("btn");
+        let count=0;
+        let show=document.getElementById("show");
+        show.style.height="50px";
+        show.style.width="50px";
+       function countb()
+       {
+        
+        count++;
+        let h1=document.createElement("h1");
+        h1.style.display = "inline";   // important
+         h1.style.fontSize = "20px";  
+         h1.innerHTML=count;
+       show.appendChild(h1);
+       }
+       
+    </script>
+</body>
+</html>

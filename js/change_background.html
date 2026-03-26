@@ -1,0 +1,32 @@
+<!-- 2. Change Background Color
+Description: Change page background color using a button.
+Practice: style -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><button id="change">change Me</button></div>
+    <script>
+        let change=document.getElementById("change");
+        let c=true;
+        change.addEventListener('click',()=>{
+            let body=document.querySelector('body');
+            if(c)
+        {
+
+            body.style.backgroundColor="red";
+            c=false;
+        }
+        else
+        {
+            body.style.backgroundColor="yellow";
+            c=true;
+        }
+        })
+    </script>
+</body>
+</html>

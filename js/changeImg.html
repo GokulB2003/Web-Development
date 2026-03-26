@@ -1,0 +1,33 @@
+<!-- 5. Change Image on Click 
+Description: Switch image when clicked.
+Practice: src -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image">
+        <img src="/Image/background.jpg" alt="" height="200px" width="200px" id="img1" onclick="change()">
+        <img src="/Image/backgroundImage.webp" alt="" height="200px" width="200px" id="img2" onclick="change2()">
+        <button id="flip">flip</button>
+
+    </div>
+    <script>
+        let img1=document.getElementById("img1");
+        let img2=document.getElementById("img2");
+        function change()
+        {
+            img1.setAttribute("src","/Image/backgroundImage.webp");
+        }
+        function change2()
+        {
+            img2.setAttribute("src","/Image/background.jpg");
+        }
+     </script>
+</body>
+</html>
