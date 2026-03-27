@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 200px;
+            width:500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000;
+            flex-direction: column;
+
+        }
+        input{
+            height: 40px;
+            width:260px;
+            
+        }
+        #s{
+            margin-top: 10px;
+            height: 50px;
+            width:260px;
+            display: block;
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="container">
+        <h1>Aadhar Portal</h1>
+        <div><input type="text" id="adhar" name="" value="" onkeyup="check()" placeholder="Enter aadhar number">
+        <!-- <button id="btn" ="check()">validation</button> -->
+        <span id="s"></span></div>
+        
+
+    </div>
+    <script src="/js/AAdharCardValidation.js">
+    </script>
+</body>
+</html>
