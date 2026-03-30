@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .inputdata{
+            padding:50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid black;
+        }
+        input{
+            padding:10px;
+
+        }
+        #btn{
+            padding:10px;
+            border-radius: 2px;
+            color: blue;
+            font-weight: 300;
+        }
+        ::placeholder{
+            text-align: center;
+            padding:3px;
+        }
+        #result{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inputdata">
+            <h2>Mobile Number Validation</h2>
+            <input type="text" id="inputd" value="" placeholder="Enter Mobile number">
+            <button id="btn">check validation</button>
+            <div id="result">❌Invalid number</div>
+        </div>
+    </div>
+    <script src="/js/MobileNumberValidation.js"></script>
+</body>
+</html>
